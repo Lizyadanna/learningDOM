@@ -7,10 +7,14 @@
   </head>
   <body>
     <button>Hello</button>
+    <button class="js-button">Secoond button</button>
 
     <script>
-      console.log(document.querySelector("button"));
+      console.log(document.querySelector("button").innerHTML);
 
+      document.querySelector("button").innerHTML = "Changed";
+
+      document.querySelector(".js-button").innerHTML = "Changed 2";
       /*
       console.log(document.title);
 
